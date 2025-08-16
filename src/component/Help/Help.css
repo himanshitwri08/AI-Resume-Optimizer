@@ -1,0 +1,29 @@
+.help-page {
+  padding: 40px 60px;   /* adds breathing space */
+  background-color: #f9fcff;  /* light background to separate */
+  min-height: calc(100vh - 150px); /* keeps content area tall enough */
+}
+
+.help-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #183153; /* same theme as logo */
+}
+
+.faq p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.faq a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+footer {
+  background: #f3fbff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}

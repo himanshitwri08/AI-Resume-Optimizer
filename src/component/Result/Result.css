@@ -1,0 +1,48 @@
+.result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.result-section h2 {
+    font-size: 1.8rem;
+    color: #183153;
+    font-weight: 600;
+}
+
+.result-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 550px;
+    min-height: 200px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+    white-space: pre-wrap; /* so line breaks show properly */
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.download-btn {
+    background-color: #7b5cff;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #6a4de0;
+}
+
+.download-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
