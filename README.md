@@ -26,26 +26,13 @@ Frontend: React, React Router
 
 Styling: CSS
 
-Build Tool: Vite / Create React App (depending on what you used)
+Build Tool: Vite / Create React App
 
-📂 Project Structure
-src/
- ├── component/
- │    ├── Navbar/
- │    ├── Hero/
- │    ├── Upload/
- │    ├── Optimize/
- │    ├── Result/
- │    ├── Footer/
- │    └── Help/
- ├── App.js
- ├── App.css
- └── index.js
 
 ▶️ Getting Started
 1. Clone the repo
-<!-- git clone https://github.com/himanshitwri08/AI.git -->
-<!-- cd optresume -->
+git clone https://github.com/himanshitwri08/AI_Resume_Optimizer.git
+cd AI_Resume_Optimizer
 
 2. Install dependencies
 npm install
