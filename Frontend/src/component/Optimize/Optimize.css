@@ -1,0 +1,107 @@
+.optimize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.optimize h2 {
+    font-size: 1.8rem;
+    color: #183153;
+    font-weight: 600;
+}
+
+.optimize-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.keyword-section,
+.prompt-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.keyword-section label,
+.prompt-section label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #183153;
+    line-height: 20px;
+}
+
+.keyword-section input,
+.prompt-section textarea {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 0.95rem;
+    outline: none;
+    resize: none;
+}
+
+.keyword-section input:focus,
+.prompt-section textarea:focus {
+    border-color: #7b5cff;
+    box-shadow: 0px 0px 5px rgba(123, 92, 255, 0.4);
+}
+
+.prompt-section textarea {
+    min-height: 100px;
+}
+
+.optimize-btn {
+    background-color: #7b5cff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.optimize-btn:hover {
+    background-color: #674bd6;
+}
+
+.optimize-btn:active{
+    background-color:white;
+    color:#674bd6;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+.optimize-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.spinner {
+  border: 3px solid #e6e5e5; 
+  border-top: 3px solid white; 
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-text {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
