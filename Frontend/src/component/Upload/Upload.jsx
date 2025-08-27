@@ -3,6 +3,7 @@ import "./Upload.css";
 import { GlobalWorkerOptions, getDocument } from "pdfjs-dist/build/pdf";
 import workerSrc from "pdfjs-dist/build/pdf.worker.min?url";
 import mammoth from "mammoth";
+import API from "../../api/api";  
 GlobalWorkerOptions.workerSrc = workerSrc;
 
 // Default backend URL
