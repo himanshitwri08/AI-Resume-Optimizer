@@ -13,10 +13,12 @@ import Help from './component/Help/Help.jsx';
 const App = () => {
   const [resumeText, setResumeText] = useState('');   
   const [optimizedText, setOptimizedText] = useState('');
+  const API_BASE = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000/api";
+  console.log("🔎 API_BASE (runtime) =", API_BASE, "window.origin=", window.location.origin);
 
   const handleOptimization = async (keywords, prompt) => {
     try {
-      const response = await fetch("http://localhost:5000/api/optimize", {
+      const response = await fetch(`${API_BASE}/optimize`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ resumeText, keywords, prompt }), 
