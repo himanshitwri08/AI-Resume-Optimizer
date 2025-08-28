@@ -1,7 +1,7 @@
 import express from "express";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import dotenv from 'dotenv';
-dotenv.config();
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 const router = express.Router();
 
