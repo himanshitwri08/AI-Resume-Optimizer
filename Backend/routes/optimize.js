@@ -6,7 +6,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const router = express.Router();
 
 // Initialize Gemini client
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
 router.post("/", async (req, res) => {
   try {
