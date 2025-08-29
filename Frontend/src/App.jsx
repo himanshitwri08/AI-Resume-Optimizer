@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
 import Navbar from './component/Navbar/Navbar.jsx';
 import Hero from './component/Hero/Hero.jsx';
 import Upload from './component/Upload/Upload.jsx';
@@ -26,6 +25,7 @@ const App = () => {
 
       const data = await response.json();
       setOptimizedText(data.optimizedText);
+       return data.optimizedText;
     } catch (error) {
       console.error("Error optimizing resume:", error);
     }
