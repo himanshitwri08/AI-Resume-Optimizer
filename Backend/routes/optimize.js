@@ -1,11 +1,7 @@
 import express from "express";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-// import dotenv from 'dotenv';
-// dotenv.config();
 
 const router = express.Router();
-
-// Initialize Gemini client
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
 router.post("/", async (req, res) => {
@@ -27,7 +23,7 @@ router.post("/", async (req, res) => {
     // Build complete prompt
     const userMessage = `
       You are a highly skilled resume optimization assistant.  
-      Rewrite resumes to be impactful, ATS-friendly, and tailored to the job requirements.  
+      Rewrite resumes to be impactful, importantly ATS-friendly, and tailored to the job requirements.  
       Always return only the optimized resume (no extra explanation).
 
       Resume:
